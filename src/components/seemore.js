@@ -2,6 +2,7 @@ import * as React from 'react'
 import Grade from './grade'
 
 const SeeMoreContext = React.createContext()
+SeeMoreContext.displayName = "SeeMoreContext"
 
 let SeeMoreProvider = (props) => {
     let [isOpen, setIsOpen] = React.useState(false)

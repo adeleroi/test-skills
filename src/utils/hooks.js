@@ -25,7 +25,6 @@ const useAsync = () => {
         )
     },[setState])
 
-
     return {
         isIdle: status === 'idle',
         isLoading: status === 'pending',

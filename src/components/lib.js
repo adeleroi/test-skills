@@ -36,14 +36,11 @@ let FullPageErrorFallback = ({error}) => {
 }
 
 let Loading = styled.h1`
-    ${'' /* background-Image: linear-gradient(to bottom right, #b13cff,#fd9d52);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */}
     font-size: 28px;
 `
 
 let InfoList = styled.ul`
-     line-height: 25px;
+     line-height: ${({lh}) => lh ? lh : "25px"};
     li {
         list-style: none;
         font-family: 'Raleway', sans-serif;
@@ -56,6 +53,7 @@ let InfoList = styled.ul`
 `
 
 let Button = styled.button`
+    outline: none;
     border: none;
     background: transparent;
     font-size: 45px;
